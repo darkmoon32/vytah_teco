@@ -8,6 +8,6 @@ PROGRAM prgMain
   END_VAR
   VAR_TEMP
   END_VAR
-
+  (*ddddd*)
 END_PROGRAM
 
