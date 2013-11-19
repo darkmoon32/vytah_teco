@@ -66,7 +66,7 @@ plcn=0
 checkprgname=1
 bdumb=-1
 onlinechngs=0
-mustcompile=1
+mustcompile=0
 [/plcwusb]
 
 [prjmngr]

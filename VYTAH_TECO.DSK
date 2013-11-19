@@ -3,10 +3,10 @@ Version="xPRO","4.3.00"
 [/desktop]
 
 [dockinfo]
-centralpc=33126704,0,0,0
-leftpane=33116600,0,1,1,256,1
-bottompane=33123192,1,146
-rightpane=33127676,0,156,0
+centralpc=42323228,0,0,0
+leftpane=42343660,0,1,1,256,1
+bottompane=42350376,1,146
+rightpane=56578624,0,156,0
 [/dockinfo]
 
 [closedtextpaneleditors]
@@ -14,11 +14,11 @@ txpaned="C:\MosaicApp\plc\ak1_spotreba\panel_ak1_spotreba.pam",3,17,1852142194,2
 txpaned="C:\MosaicApp\plc\ak1_vystrihovani\panel_ak1_vysrihovani.pam",4,14,0,0,0,0,3787083839,30325242,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 txpaned="panel_7seg.pam",27,111,1028935237,757935399,757935405,757935405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 txpaned="sek_uloha_panel.pam",28,24,1699507567,5272678,90731816,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+txpaned="vytah_teco_panel.pam",5,8,757097321,1547322144,1634955085,1883333481,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 [/closedtextpaneleditors]
 
 [closedtextsyneditors]
-txsyned="C:\MOSAICAPP\PLC\VYTAH_TECO\SYSGEN\vytah_teco.hwc",7,25,1,1,1,1,376667609,30336253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-txsyned="C:\MOSAICAPP\PLC\VYTAH_TECO\vytah_teco.mcf",1,1,1,1,1,1,571188268,30334874,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+txsyned="C:\MOSAICAPP\PLC\VYTAH_TECO\vytah_teco.mak",28,50,1,1,1,1,3295254543,30336253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 txsyned="C:\MOSAICAPP\PLC\SEKVENCNI_ULOHA\vyber_pis.ST",1,1,1,1,1,1,2546753345,30331882,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 txsyned="C:\MOSAICAPP\PLC\SEKVENCNI_ULOHA\vyber_kame.ST",1,1,1,1,1,1,259748338,30331885,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 txsyned="C:\MOSAICAPP\PLC\SEKVENCNI_ULOHA\vyber_cem.ST",1,1,1,1,1,1,127019108,30331886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -102,31 +102,37 @@ showdetails=1
 [/plcdiskdlg]
 
 [prjmngrwin]
-window=0,1,0,95,654,1190,493,291,493,603,0,0,-1
+window=0,0,0,95,746,1600,493,383,493,603,0,0,-1
 [/prjmngrwin]
 
 [msgwin2]
-window=33123192,1,0,0,117,922,38,667,117,1063,0,0,1
+window=42350376,1,0,0,117,1332,38,759,117,1063,0,0,1
 [/msgwin2]
 
 [msgwin1]
-window=33123192,1,0,0,117,922,38,667,117,1063,0,0,0
+window=42350376,1,0,0,117,1332,38,759,117,1063,0,0,0
 [/msgwin1]
 
 [symbwin]
-window=33123192,1,0,0,117,922,38,667,117,1063,0,0,2
+window=42350376,1,0,0,117,1332,38,759,117,1063,0,0,2
 hdrwidth2=100
 hdrwidth3=100
 [/symbwin]
 
 [openfileswin]
-window=33116600,1,0,0,652,248,773,11,773,248,0,0,2
+window=42343660,1,0,0,744,248,773,103,773,248,0,0,2
 [/openfileswin]
 
 [evalmodifdlg]
 exprobj="Main.progPanel"
 valobj="1"
 [/evalmodifdlg]
+
+[paneltexted]
+editor="XClip-Panel",1,0,1,1,1,1,126649404,56584312,1636264,4942957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+window=0,0,75,75,625,1200,416,251,625,1200,0,1,-1
+font="Fixedsys",9
+[/paneltexted]
 
 [accwin]
 base=0,1,1,0,0
@@ -159,7 +165,7 @@ font="courier new",1,0,9,-12,0,0,0
 [/memwin2]
 
 [watch2win]
-window=33123192,1,0,0,117,922,38,667,117,1063,0,0,4
+window=42350376,1,0,0,117,1332,38,759,117,1063,0,0,4
 hdrnamew=120,60,0
 font="courier new",238,0,10,-13,-2147483640,0,0
 defbank="Banka1"
@@ -176,7 +182,7 @@ mem2visible=0
 [/watch2win]
 
 [prjfileswin]
-window=33116600,1,0,0,652,248,773,11,773,248,0,0,1
+window=42343660,1,0,0,744,248,773,103,773,248,0,0,1
 filesheight=424
 relatednamew=110
 relatedcnt=1
@@ -184,11 +190,11 @@ relfile0="C:\MosaicApp\plc\vytah_teco\vytah_teco_panel.pam"
 [/prjfileswin]
 
 [ctrlswin]
-window=33116600,1,0,0,652,248,358,37,358,248,0,0,0
+window=42343660,1,0,0,744,248,358,37,358,248,0,0,0
 [/ctrlswin]
 
 [Datalogger]
-window=33126704,0,0,0,460,942,460,190,594,1206,0,0,0
+window=42323228,0,0,0,565,1421,187,282,594,1429,0,0,0
 [/Datalogger]
 
 [PanelSIM_1]
@@ -202,7 +208,7 @@ window=0,0,695,273,317,233,317,233,317,233,0,0,-1
 [PlcNetManager]
 SortItems=1
 SortPlcs=1
-window=33116600,0,0,0,652,228,681,142,642,248,0,0,5
+window=42343660,0,0,0,744,248,773,256,642,248,0,0,5
 [/PlcNetManager]
 
 [SelectPLC]
@@ -211,7 +217,7 @@ IOSetupColW="200,190,72,72,72,72,64,140,"
 
 [textsyneditor]
 editor="prgMain.ST",1,0,0,12,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
-window=33126704,1,0,0,502,922,531,930,773,1206,0,0,1
+window=42323228,1,0,0,594,1332,623,1340,773,1383,0,0,1
 localparams=0,1,1,1,1,30,0,80,1,2,1,0
 font="Courier New",10
 relay=0,0,0,0,0,"",0,0
@@ -220,8 +226,38 @@ debugparams=1,0,1
 [/textsyneditor]
 
 [textsyneditor]
-editor="funkcePWM.ST",1,0,0,12,17,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
-window=33126704,1,0,0,502,922,531,930,531,930,0,0,2
+editor="vytah_teco.mcf",1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+window=42323228,1,0,0,594,1332,623,1340,773,1383,0,0,2
+localparams=0,1,1,1,1,30,0,80,1,2,1,0
+font="Courier New",10
+relay=0,0,0,0,0,"",0,0
+inspectorctx=""
+debugparams=1,0,1
+[/textsyneditor]
+
+[textsyneditor]
+editor="funkcePWM.ST",1,1,0,27,12,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+window=42323228,1,0,0,594,1332,623,1340,623,1340,0,0,3
+localparams=0,1,1,1,1,30,0,80,1,2,1,0
+font="Courier New",10
+relay=0,0,0,0,0,"",0,0
+inspectorctx=""
+debugparams=1,0,1
+[/textsyneditor]
+
+[textsyneditor]
+editor="SYSGEN\vytah_teco.hwc",1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+window=42323228,1,0,0,594,1332,623,1340,623,1340,0,0,4
+localparams=0,1,1,1,1,30,0,80,1,4,0,0
+font="Lucida Console",11
+relay=0,0,0,0,0,"",0,0
+inspectorctx=""
+debugparams=1,0,1
+[/textsyneditor]
+
+[textsyneditor]
+editor="VYTAH_TECO.ST",1,0,0,5,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+window=42323228,1,0,0,594,1332,623,1340,623,1340,0,0,5
 localparams=0,1,1,1,1,30,0,80,1,2,1,0
 font="Courier New",10
 relay=0,0,0,0,0,"",0,0
