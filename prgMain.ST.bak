@@ -9,5 +9,13 @@ PROGRAM prgMain
   VAR_TEMP
   END_VAR
   (*ddddd*)
+<<<<<<< HEAD
+  (*mara*)
+  
+=======
+  
+  (*ddddd*)
+  (*ddddd*)
+>>>>>>> 73217fde8fddd5af0b2be220a52dfbe6690c282d
 END_PROGRAM
 
