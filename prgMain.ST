@@ -9,5 +9,8 @@ PROGRAM prgMain
   VAR_TEMP
   END_VAR
   (*ddddd*)
+  
+  (*ddddd*)
+  (*ddddd*)
 END_PROGRAM
 
