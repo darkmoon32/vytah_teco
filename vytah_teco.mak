@@ -23,10 +23,11 @@
 #endlibs
 
 ;**************************************
+#usefile "Sysgen\CIBMaker.st", 'auto'
 #usefile "SysGen\HWConfig.ST", 'auto'
+#usefile "Sysgen\CIBMaker.mos", 'auto'
 #usefile "SysGen\vytah_teco.hwc", 'auto'
 #usefile "..\plc.hwn", 'auto'
-#usefile "Sysgen\CIBMaker.mos", 'auto'
-#usefile "Sysgen\CIBMaker.st", 'auto'
+#usefile "funkcePWM.ST"
 #usefile "prgMain.ST"
 #usefile "vytah_teco.mcf", 'auto'

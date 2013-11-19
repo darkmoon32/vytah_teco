@@ -1,0 +1,17 @@
+#srcfile 'C:\MOSAICAPP\PLC\VYTAH_TECO\VYTAH_TECO.MCF'
+ 
+#srcfile 'C:\MOSAICAPP\PLC\VYTAH_TECO\VYTAH_TECO.MCF'
+
+; ***** RESOURCE - CPM
+#reg prgMain Main
+#srcline 4 ;    PROGRAM Main WITH FreeWheeling : prgMain ();
+P     0
+ LEA  Main
+ CAL  prgMain_L0
+E     0
+
+
+
+ 
+
+#srcfile ''

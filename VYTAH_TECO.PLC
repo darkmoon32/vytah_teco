@@ -3,7 +3,7 @@ Version="xPRO","4.3.00"
 [/project]
 
 [compiler]
-options=177
+options=49
 remzs=1
 dirs=""
 [/compiler]
@@ -55,13 +55,13 @@ slTRportnum=61682
 [/plcselection]
 
 [plcwusb]
-sel=-1
+sel=3
 type=17
 genrst=0
 askrst=1
 genrunp=1
 genhltp=1
-mode=2
+mode=1
 plcn=0
 checkprgname=1
 bdumb=-1
@@ -73,6 +73,9 @@ mustcompile=1
 shownds=0
 nodeplus="PlcComnPrj"
 nodeplus="PlcHw"
+nodeplus="PlcSw"
+nodeplus="PlcIde"
+nodeplus="PlcDoc"
 [/prjmngr]
 
 [txtextsyneditor]

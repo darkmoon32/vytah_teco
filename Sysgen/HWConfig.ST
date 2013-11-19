@@ -30,22 +30,19 @@ TYPE
     PCT   : REAL;
   END_STRUCT;
 
-  TBIN_8DI : STRUCT
+  TAO_TC6 : STRUCT
+    FS  : INT ;
+    ENG  : REAL;
+    PCT  : REAL;
+  END_STRUCT;
+
+  TBIN_6DI : STRUCT
     DI0  : BOOL;
     DI1  : BOOL;
     DI2  : BOOL;
     DI3  : BOOL;
     DI4  : BOOL;
     DI5  : BOOL;
-    DI6  : BOOL;
-    DI7  : BOOL;
-  END_STRUCT;
-
-  TBIN_4DIP  : STRUCT
-    DIP0  : BOOL;
-    DIP1  : BOOL;
-    DIP2  : BOOL;
-    DIP3  : BOOL;
   END_STRUCT;
 
   TBIN_4DIPW : STRUCT
@@ -126,7 +123,7 @@ TYPE
 END_TYPE
 (* ********************************************************************** *)
 (* ---------------------------------------------------------------------- *)
-(* CP-1004 *)
+(* CP-1005 *)
 VAR_GLOBAL
   r0_p0_Statistic_CH1  AT %X7500 : TCHStatistic;
   r0_p0_Control_CH1    AT %Y7500 : TCHControl;
@@ -138,20 +135,20 @@ VAR_GLOBAL
   r0_p2_Control_MI_CIB1 AT %Y0   : TCHControl;
 END_VAR
 (* ---------------------------------------------------------------------- *)
-(* IR-1057 *)
+(* IR-1064 *)
 VAR_GLOBAL
-  r0_p3_DI             AT %X10  : TBIN_8DI;
-  r0_p3_DIP            AT %X11  : TBIN_4DIP;
-  r0_p3_CNT_IN1        AT %X12  : TCNTF_IN;
-  r0_p3_CNT_IN2        AT %X22  : TCNTF_IN;
-  r0_p3_AI0            AT %X32  : TAI;
-  r0_p3_AI1            AT %X44  : TAI;
-  r0_p3_AI2            AT %X56  : TAI;
-  r0_p3_AI3            AT %X68  : TAI;
+  r0_p3_DI             AT %X10  : TBIN_6DI;
+  r0_p3_dummy0         AT %X11  : USINT;
+  r0_p3_AI0            AT %X12  : TAI;
+  r0_p3_AI1            AT %X24  : TAI;
+  r0_p3_AI2            AT %X36  : TAI;
+  r0_p3_AI3            AT %X48  : TAI;
+  r0_p3_AI4            AT %X60  : TAI;
+  r0_p3_AI5            AT %X72  : TAI;
   r0_p3_DO             AT %Y2   : TBIN_6DO;
-  r0_p3_dummy          AT %Y3   : USINT;
-  r0_p3_CNT_OUT1       AT %Y4   : TCNTF_OUT;
-  r0_p3_CNT_OUT2       AT %Y10  : TCNTF_OUT;
+  r0_p3_dummy1         AT %Y3   : USINT;
+  r0_p3_AO0            AT %Y4   : TAO_TC6;
+  r0_p3_AO1            AT %Y14  : TAO_TC6;
 END_VAR
 (* ********************************************************************** *)
 (* ---------------------------------------------------------------------- *)

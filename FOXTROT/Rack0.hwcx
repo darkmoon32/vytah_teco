@@ -1,5 +1,5 @@
 [Pos0]
-ModulID=1004
+ModulID=1005
 ModuleName=
 ModuleFileName=
 RemUnit=0
@@ -24,7 +24,7 @@ SCH0_disabled=0
 SCH1_mode=OFF
 SCH1_index=2
 SCH1_LogIndex=2
-SCH1_adr=0
+SCH1_adr=1
 SCH1_baud=38 400
 SCH1_timeout=10
 SCH1_zpozdeni=0
@@ -36,7 +36,7 @@ SCH1_disabled=0
 SCH2_mode=OFF
 SCH2_index=3
 SCH2_LogIndex=3
-SCH2_adr=0
+SCH2_adr=2
 SCH2_baud=38 400
 SCH2_timeout=10
 SCH2_zpozdeni=0
@@ -48,7 +48,7 @@ SCH2_disabled=0
 SCH3_mode=OFF
 SCH3_index=4
 SCH3_LogIndex=4
-SCH3_adr=0
+SCH3_adr=3
 SCH3_baud=38 400
 SCH3_timeout=10
 SCH3_zpozdeni=0
@@ -85,22 +85,10 @@ ETH0_DNS1=0
 ETH0_DNS2=0
 ETH0_DNS3=0
 
-[Pos3]
-ModulID=1057
-ModuleName=
-ModuleFileName=
-RemUnit=0
-Verze=
-ModulFormat=1
-ScriptFormat=1
-XPosE2=10,0|
-YPosE2=2,0|
-ExtendedSizeParam=0
-
 [Pos2]
 ModulID=3127
 ModuleName=
-ModuleFileName=
+ModuleFileName=panel_R0_P2
 RemUnit=1
 Verze=
 ModulFormat=1
@@ -114,4 +102,16 @@ PGB1=0
 PGB2=0
 PGB3=0
 PGB4=0
+
+[Pos3]
+ModulID=1064
+ModuleName=
+ModuleFileName=
+RemUnit=0
+Verze=
+ModulFormat=1
+ScriptFormat=1
+XPosE2=10,0|
+YPosE2=2,0|
+ExtendedSizeParam=0
 

@@ -1,9 +1,9 @@
 [Chanel]
 EEPROM=0
 SCH1_adr=0
-SCH2_adr=0
-SCH3_adr=0
-SCH4_adr=0
+SCH2_adr=1
+SCH3_adr=2
+SCH4_adr=3
 ETH0_adr0=0
 ETH0_adr1=0
 ETH0_adr2=0

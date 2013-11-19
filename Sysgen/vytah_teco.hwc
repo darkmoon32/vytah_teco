@@ -43,7 +43,7 @@
 
 ;Poèet rámù : 4
 ;----------------------------------------------------------------------
-;Rám : 0 ; Pozice : 0 ; 	 Typ jednotky : CP-1004; TXN 110 04
+;Rám : 0 ; Pozice : 0 ; 	 Typ jednotky : CP-1005; TXN 110 05
 #table _TTS_SCH _Table_CH1 = $00C2,$0000,	; PC
                              $02,$00,$0E,$0A,$00,$00,$00,$00,	; 
                              0,0,0,0	; Modems
@@ -58,59 +58,58 @@
   ;#module TModulE1 1, 0, 2, $110, 10, 2, __offset(r0_p2_Statistic_MI_CIB1), __offset(r0_p2_Control_MI_CIB1), __indx (_Table_CIB_MI_CIB1)
 #endif
 ;----------------------------------------------------------------------
-;Rám : 0 ; Pozice : 3 ; 	 Typ jednotky : IR-1057; TXN 110 57
-#struct _TTS_IR1057
-        _TTS_Head    Head,
+;Rám : 0 ; Pozice : 3 ; 	 Typ jednotky : IR-1064; TXN 110 64
+#struct _TTS_EnbCHAI
+        USINT ESTAT,
+        USINT EFS,
+        USINT EENG,
+        USINT EPCT
+
+#struct _TTS_IniCHAI
+        USINT TypAI,
+        USINT TAU
+
+#struct _TTS_EnbCHAO_650
+        USINT  EFS,
+        USINT  EENG,
+        USINT  EPCT
+
+#struct _TTS_IniCHAO_650
+        USINT TypeAO,
+        USINT BlcCont,
+        REAL  BlcState
+
+#struct _TTS_IR1064
+        _TTS_Head Head,
         USINT EDI,
-        USINT EDIP,
-        USINT ESCNT1,
-        USINT ECNT1,
-        USINT ECNT1B,
-        USINT ESCNT2,
-        USINT ECNT2,
-        USINT ECNT2B,
-        USINT ESAI0,
-        USINT EFS0,
-        USINT EENG0,
-        USINT EPCT0,
-        USINT ESAI1,
-        USINT EFS1,
-        USINT EENG1,
-        USINT EPCT1,
-        USINT ESAI2,
-        USINT EFS2,
-        USINT EENG2,
-        USINT EPCT2,
-        USINT ESAI3,
-        USINT EFS3,
-        USINT EENG3,
-        USINT EPCT3,
+        USINT Erezi,
+        _TTS_EnbCHAI[6] EAI,
         USINT EDO,
-        USINT Erez,
-        USINT ECCNT1,
-        USINT ESET1,
-        USINT ECCNT2,
-        USINT ESET2,
-        USINT SPE,
-        USINT SPP,
-        USINT MODCNT1,
-        USINT CFGCNT1,
-        USINT MODCNT2,
-        USINT CFGCNT2
-#table _TTS_IR1057 _r0_p3_Table = 1055,$00,$00,
+        USINT Erezo,
+        _TTS_EnbCHAO_650[2] EAO,
+        _TTS_IniCHAI[6] SetAI,
+        _TTS_IniCHAO_650[2] SetAO
+
+#table _TTS_IR1064 _r0_p3_Table = 1056,$00,$00,
                                   $80,$00,
-                                  $80,$80,$80,
+                                  $00,$00,$00,$00,
+                                  $00,$00,$00,$00,
+                                  $00,$00,$00,$00,
+                                  $00,$00,$00,$00,
+                                  $00,$00,$00,$00,
+                                  $00,$00,$00,$00,
+                                  $80,$00,
                                   $00,$00,$00,
-                                  $00,$00,$00,$00,
-                                  $00,$00,$00,$00,
-                                  $00,$00,$00,$00,
-                                  $00,$00,$00,$00,
+                                  $00,$00,$00,
                                   $80,$00,
-                                  $80,$80,$00,$00,
-                                  $00,$00,
-                                  $1C,$00,
-                                  $00,$00
-#module TModulE1 1, 0, 3, $0, 70, 14, __offset(r0_p3_DI), __offset(r0_p3_DO), __indx (_r0_p3_Table)
+                                  $80,$00,
+                                  $80,$00,
+                                  $80,$00,
+                                  $80,$00,
+                                  $80,$00,
+                                  $80,$00,0.00,
+                                  $80,$00,0.00
+#module TModulE1 1, 0, 3, $0, 74, 22, __offset(r0_p3_DI), __offset(r0_p3_DO), __indx (_r0_p3_Table)
 
 ;......................................................................
 
