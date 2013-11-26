@@ -21,7 +21,7 @@ FUNCTION_BLOCK fbKabinal
     elsif pod5l then kl := 5;
     end_if;
   end_if;
-  
+
     st := 10;
     if kl - kaml = 1 or kaml - kl = 1 then
       st := 7;

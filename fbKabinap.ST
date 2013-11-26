@@ -32,7 +32,7 @@ FUNCTION_BLOCK fbKabinap
         st := 4;
       end_if;
     end_if;
-    
+
     motor4A := 0;
     motor3A := 0;
 
