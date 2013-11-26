@@ -1,0 +1,9 @@
+
+TYPE
+  TUsintArray : ARRAY [1..5] OF USINT;
+END_TYPE
+
+VAR_GLOBAL
+  i : USINT;
+END_VAR
+
