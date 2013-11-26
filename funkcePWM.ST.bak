@@ -24,6 +24,6 @@ FUNCTION funkcePWM : BOOL
   if i>10 then i:=0;
   end_if;
 
-  fcePWM:=motor;
+  funkcePWM:=motor;
 
 END_FUNCTION
